@@ -8,8 +8,31 @@
 </head>
 
 <body>
+    <header>
+        <h2>Logo</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home"  asp-action="About">About</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Contact">Contact</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Projects">Projects</a>
+                </li>
+                    
+                    
+                
+            </ul>
+        </nav>
+
+    </header>
     <div>
         @RenderBody()
     </div>
+    <footer>
+        <p>&copy; Sara N.</p>
+    </footer>
 </body>
 </html>
