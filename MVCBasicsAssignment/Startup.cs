@@ -32,11 +32,16 @@ namespace MVCBasicsAssignment
 
             app.UseEndpoints(endpoints =>
             {
+
                 endpoints.MapControllerRoute(
                    name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"
-                    );   
-                });
+                    );
+
+                endpoints.MapControllerRoute("FeverCheck", "FeverCheck",
+                    defaults: new { controller = "FeverCheck", action = "FeverCheck" });
+            });
+
             
         }
     }

@@ -1,0 +1,12 @@
+﻿header nav ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+body{
+    background-color:aqua
+}
+
+footer {
+    margin-top: 500px;
+}
