@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace MVCBasicsAssignment.Models
 {
     public class CheckFever
@@ -21,19 +22,19 @@ namespace MVCBasicsAssignment.Models
             }
             else if (temp > 40)
             {
-                fever = "Are you sure you're alive? You're burning up!";
+                fever = " You're burning up, Go to the doctor!";
             }
             else if (temp <= 36 && temp >= 34)
             {
-                fever = "You have hypothermia!";
+                fever = "You are hypothermia!Warm up yourself";
             }
             else if (temp < 34)
             {
-                fever = "You're practically made of ice! Go seek a doctor!";
+                fever = "You're extreme hypothermia! See a doctor!";
             }
             else
             {
-                fever = "You do not have fever, hurray!";
+                fever = "You do not have fever!";
             }
 
 

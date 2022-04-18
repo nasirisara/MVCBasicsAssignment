@@ -3,10 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MVCBasicsAssignment.Models;
 
 namespace MVCBasicsAssignment.Controllers
-{
-  
+
+    {
         public class FeverCheckController : Controller
         {
             [HttpGet]
@@ -14,6 +15,15 @@ namespace MVCBasicsAssignment.Controllers
             {
                 return View();
             }
-            
+            [HttpPost]
+            public IActionResult Index(double temp, string type)
+            {
+
+                ViewBag.Fever = CheckFever.Check(temp, type);
+
+                return View();
+            }
         }
-}
+
+    }
+
