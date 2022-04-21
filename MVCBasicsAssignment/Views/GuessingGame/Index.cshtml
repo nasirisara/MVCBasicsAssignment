@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Guessing Game</h1>
+<form method="post">
+    <input name="guessNumber" type="number" placeholder="Please input your guessing number! " />
+    <br />
+    <br />
+    <button>Click Here to check your number!</button>
+</form>
+
+<form asp-action="Reset" asp-controller="GuessingGame" method="get">
+    <button class="resetbutton">Reset</button>
+    <br />
+</form>
+
+
+<p> The Number is @ViewBag.Result1</p>
+
+@if (ViewBag.Result2 != null)
+{
+    <h3>Result</h3>
+    <p>@ViewBag.Result2</p>
+}
